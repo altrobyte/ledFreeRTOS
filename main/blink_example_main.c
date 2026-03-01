@@ -15,11 +15,11 @@ void led_blink_task(void *pvParameters)
     {
         gpio_set_level(LED_GPIO, 1);  // LED ON
         ESP_LOGI(TAG, "LED ON");
-        vTaskDelay(pdMS_TO_TICKS(800));   // 500 ms delay
+        vTaskDelay(pdMS_TO_TICKS(500));   // 500 ms delay
 
         gpio_set_level(LED_GPIO, 0);  // LED OFF
         ESP_LOGI(TAG, "LED OFF");
-        vTaskDelay(pdMS_TO_TICKS(800));   // 500 ms delay
+        vTaskDelay(pdMS_TO_TICKS(500));   // 500 ms delay
     }
 }
 // You can add another task here for counting and displaying numbers on the OLED as per your requirement.
